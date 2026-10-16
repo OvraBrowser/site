@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-// Static export, served by Cloudflare Pages
+// Static export to `out/`, served as Cloudflare Workers static assets (see wrangler.jsonc)
 const nextConfig: NextConfig = {
   output: "export",
   images: { unoptimized: true },
