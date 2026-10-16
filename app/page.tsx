@@ -38,7 +38,7 @@ export default function Home() {
                 View on GitHub
               </a>
             </div>
-            <p className="mt-4 text-[14px] text-steel">Free. Requires macOS 14 or later.</p>
+            <p className="mt-4 text-[14px] text-steel">Requires macOS 14 or later.</p>
 
             <Image
               src="/shots/theme-aurora.jpg"
@@ -130,7 +130,7 @@ export default function Home() {
           <div className="mx-auto max-w-[1024px] px-5">
             <Image src="/ovra-icon.png" alt="" width={96} height={96} className="fade-up mx-auto" />
             <h2 className="fade-up mt-6 text-[clamp(2.5rem,6vw,4rem)] font-semibold leading-[1.05] tracking-[-0.015em]">Try Ovra.</h2>
-            <p className="fade-up mx-auto mt-4 max-w-[40ch] text-[19px] text-steel">Free for the Mac. It takes a minute to set up.</p>
+            <p className="fade-up mx-auto mt-4 max-w-[40ch] text-[19px] text-steel">Available for the Mac. It takes a minute to set up.</p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
               <a href={DOWNLOAD_URL} className="pill">
                 Download for Mac
