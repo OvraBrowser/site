@@ -5,11 +5,11 @@ import { useState } from "react";
 
 // Real screenshots of Ovra's new tab page, one per built-in theme
 const themes = [
-  { id: "aurora", name: "Aurora", swatch: "linear-gradient(135deg,#6a7cf0,#7b4fb0)" },
-  { id: "forest-bloom", name: "Forest Bloom", swatch: "linear-gradient(135deg,#0f8c7e,#2fd16d)" },
-  { id: "icy-mist", name: "Icy Mist", swatch: "linear-gradient(135deg,#dfe8f7,#b9c8de)" },
-  { id: "midnight-blue", name: "Midnight Blue", swatch: "linear-gradient(135deg,#0e1a1f,#24434f)" },
-  { id: "velvet-dusk", name: "Velvet Dusk", swatch: "linear-gradient(135deg,#4b12d8,#8a2be2)" },
+  { id: "aurora", name: "Aurora", swatch: "linear-gradient(135deg,#5a68d6,#5a3590)" },
+  { id: "forest-bloom", name: "Forest Bloom", swatch: "linear-gradient(135deg,#2f6b55,#1b3e36)" },
+  { id: "icy-mist", name: "Icy Mist", swatch: "linear-gradient(135deg,#e0eafc,#cfdef3)" },
+  { id: "midnight-blue", name: "Midnight Blue", swatch: "linear-gradient(135deg,#2a3f7a,#141d3d)" },
+  { id: "velvet-dusk", name: "Velvet Dusk", swatch: "linear-gradient(135deg,#84406f,#3f1f4a)" },
 ];
 
 export default function ThemeSwitcher() {

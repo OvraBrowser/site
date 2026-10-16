@@ -11,6 +11,9 @@ const features = [
   { title: "A smarter address bar", text: "Suggestions from the web and your own history as you type." },
   { title: "Automatic updates", text: "New versions install themselves, so you're always on the latest Ovra." },
   { title: "Native to the Mac", text: "Written in Swift on Apple's WebKit, so it feels at home on macOS." },
+  { title: "Tabs in a sidebar", text: "Your tabs and library live in a glass sidebar. Hide it when you want the whole window." },
+  { title: "Back up and move", text: "Save your settings, themes, favorites and bookmarks to one file and restore them on any Mac." },
+  { title: "Privacy at a glance", text: "Click the shield in the address bar to see cookies and storage for a site, and clear them in one click." },
 ];
 
 export default function Home() {
@@ -42,7 +45,7 @@ export default function Home() {
 
             <Image
               src="/shots/theme-aurora.jpg"
-              alt="Ovra's new tab page"
+              alt="Ovra's start page with the tab sidebar"
               width={2000}
               height={1143}
               priority
@@ -59,15 +62,15 @@ export default function Home() {
               Blocks the junk before it loads.
             </h2>
             <p className="fade-up mx-auto mt-6 max-w-[52ch] text-balance text-[19px] text-white/65">
-              Ads and trackers are stopped by default, using DuckDuckGo&apos;s Tracker Radar. Fingerprinting
-              protection makes you harder to follow from site to site. Pages load faster because there&apos;s less to
-              load.
+              Ads and trackers are stopped by default, using DuckDuckGo&apos;s Tracker Radar, including known
+              fingerprinting scripts. You&apos;re harder to follow from site to site, and pages load faster because
+              there&apos;s less to load.
             </p>
             <div className="mx-auto mt-14 grid max-w-[760px] gap-4 text-start sm:grid-cols-3">
               {[
                 ["Ad blocking", "On from the first launch. Switch it off anytime in Settings."],
                 ["Tracker blocking", "Known trackers are blocked across every site you visit."],
-                ["Fingerprint resistance", "Fewer signals for sites to identify your device."],
+                ["Fingerprinting scripts", "Known fingerprinting scripts are blocked along with trackers."],
               ].map(([title, text]) => (
                 <div key={title} className="fade-up rounded-[22px] bg-white/[0.08] p-6">
                   <h3 className="text-[19px] font-semibold">{title}</h3>
@@ -83,7 +86,8 @@ export default function Home() {
           <div className="mx-auto max-w-[1024px] px-5">
             <h2 className="fade-up text-[clamp(2.5rem,6vw,4rem)] font-semibold leading-[1.05] tracking-[-0.015em]">Make it yours.</h2>
             <p className="fade-up mx-auto mt-5 max-w-[44ch] text-balance text-[19px] text-steel">
-              Pick a theme and the whole window follows, from the tabs to the new tab page. Or build your own gradient.
+              Pick a theme and the whole window follows, from the sidebar to the start page. Or build your own with up
+              to four colors, and share it with friends as a file.
             </p>
             <div className="mt-12">
               <ThemeSwitcher />
